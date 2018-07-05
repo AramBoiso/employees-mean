@@ -11,9 +11,9 @@ export class EmployeeService {
   readonly URL_API;
   employees:Array<Employee>;
 
-  constructor(private http: HttpClient) {
+  constructor(public http: HttpClient) {
 
-     this.URL_API = 'http://localhost:3000/api/employees';
+     this.URL_API = 'https://mean-employees-api.herokuapp.com/api/employees';
      this.selectedEmployee = new Employee();
 
      }
